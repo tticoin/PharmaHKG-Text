@@ -1,5 +1,5 @@
 python3 dgl-ke/python/dglke/train.py \
-  --dataset DRUGBANK \
+  --dataset PharmaHKG \
   --data_path dataset/noaug \
   --data_file train.tsv valid.tsv test.tsv \
   --format 'raw_udd_hrt' \
@@ -21,7 +21,7 @@ done
 
 
 python3 dgl-ke/python/dglke/train.py \
-  --dataset DRUGBANK \
+  --dataset PharmaHKG \
   --data_path dataset/aug \
   --data_file train.tsv valid.tsv test.tsv \
   --format 'raw_udd_hrt' \
