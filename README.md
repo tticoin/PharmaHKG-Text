@@ -1,5 +1,10 @@
 # PharmaHKG-Text
-The implementation of Representing a Heterogeneous Pharmaceutical Knowledge-Graph with Textual Information
+The implementation of Representing a [Heterogeneous Pharmaceutical Knowledge-Graph with Textual Information](https://www.frontiersin.org/articles/10.3389/frma.2021.670206/full).
+
+## Requirements
+```
+pip3 install -r requirements.txt
+```
 
 ## Usage
 ### Constructing dataset
@@ -48,6 +53,20 @@ python3 train.py \
 When you use the (B) Alignemnt method, please add ```--do_alignment```.
 When using the (C) Augmentation method, please set ```--data_path``` to ```dataset/aug``` and set the ```---entity_emb_file``` to ```aug```.
 
+## Citation
+```
+@ARTICLE{10.3389/frma.2021.670206,
+AUTHOR={Asada, Masaki and Gunasekaran, Nallappan and Miwa, Makoto and Sasaki, Yutaka},   
+TITLE={Representing a Heterogeneous Pharmaceutical Knowledge-Graph with Textual Information},      
+JOURNAL={Frontiers in Research Metrics and Analytics},      
+VOLUME={6},      
+PAGES={39},     
+YEAR={2021},      
+URL={https://www.frontiersin.org/article/10.3389/frma.2021.670206},       
+DOI={10.3389/frma.2021.670206},      
+ISSN={2504-0537},   
+}
+```
 
 ## Acknowledgement
 This work was supported by JSPS KAKENHI Grant Number 20k11962.
