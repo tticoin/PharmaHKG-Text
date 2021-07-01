@@ -81,22 +81,6 @@ with open(args.entities_tsv, encoding='utf-8', newline='') as f:
         print(cols[1], text_type, text[:30])
         bert_inputs.append(text)
 
-        #text_type = 'gene-name'
-        ## For checking coverage
-        #if kb_type not in coverage: coverage[kb_type] = {}
-        #if text_type not in coverage[kb_type]: coverage[kb_type][text_type] = [0,0]
-        #coverage[kb_type][text_type][0] += 1
-        #if key not in texts:
-        #    coverage[kb_type][text_type][1] += 1
-        #elif text_type not in texts[key]:
-        #    coverage[kb_type][text_type][1] += 1
-
-
-#for k, v in coverage.items():
-#    print(k)
-#    for kk, vv in v.items():
-#        print(kk, (vv[0] - vv[1]) / vv[0])
-
 model_name = "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract"
 config = AutoConfig.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name, do_lower_case=args.do_lower_case)
