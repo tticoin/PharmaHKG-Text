@@ -1,0 +1,24 @@
+python3 train.py \
+  --model_name SimplE \
+  --dataset PharmaHKG \
+  --data_path ../../../dataset/noaug \
+  --data_file train.tsv valid.tsv test.tsv \
+  --format 'raw_udd_hrt' \
+  --batch_size 4096 \
+  --log_interval 1000 \
+  --neg_sample_size 1 \
+  --regularization_coef 1e-9 \
+  --regularization_norm 2 \
+  --hidden_dim 768 \
+  --lr 0.25 \
+  --neg_sample_size_eval -1 \
+  --negative_sampling_for_hetero \
+  --loss_genre Logistic \
+  --gpu 0 \
+  --mix_cpu_gpu \
+  --num_epochs 100 \
+  --valid \
+  --eval_interval_epoch 100 \
+  --save_path /data/asada.13003/outputs/foo \
+  --entity_emb_file noaug_name \
+  --async_update
