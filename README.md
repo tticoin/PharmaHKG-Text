@@ -1,5 +1,5 @@
 # PharmaHKG-Text
-The implementation of Representing a [Heterogeneous Pharmaceutical Knowledge-Graph with Textual Information](https://www.frontiersin.org/articles/10.3389/frma.2021.670206/full).
+The implementation of [Representing a Heterogeneous Pharmaceutical Knowledge-Graph with Textual Information](https://www.frontiersin.org/articles/10.3389/frma.2021.670206/full).
 
 ## Requirements
 ```
