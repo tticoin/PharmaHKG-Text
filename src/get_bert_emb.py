@@ -127,7 +127,6 @@ if args.mode == 'aug+name':
     preds = preds * mask + uniform_init * mask_
 
 print(preds.shape)
-np.save(emb_path, preds)
 if args.mode == 'noaug':
     emb_path = os.path.join(args.output_dir, '{}_{}'.format(args.mode, args.text_type,))
 elif args.mode == 'aug':
